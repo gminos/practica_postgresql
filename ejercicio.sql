@@ -59,11 +59,11 @@ REVOKE CONNECT ON DATABASE mrlh_contacts FROM PUBLIC;
 
 -- Otargar permiso de uso al usuario sobre el esquema
 GRANT USAGE ON SCHEMA sr1_public TO r1_user_table;
-
 -- nota: Un usuario tiene que tener permiso de uso sobre
 -- el esquema ya que nada de servira que tenga permisos de select, insert 
 -- sobre las tablas de dicho esquema ya que no podra hacer nada sin antes
 -- tener permiso de uso sobre el esquema
+
 -- Para ver los permisos otorgados de un usuario a la tablas de un schema
 SELECT
     table_name,
